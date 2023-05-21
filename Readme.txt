@@ -21,10 +21,12 @@ WARNING!
 2) Change the directory in the Python -> filepath = "C:/Users/burak/Desktop/Excel_SQL/PROJE/LifeQuality/CompanyList.xlsx"
 3) Change the name of the Excel file -> filepath = "C:/Users/burak/Desktop/Excel_SQL/PROJE/LifeQuality/CompanyList.xlsx"
 Mine is "CompanyList.xlsx"
-4) The Excel file should never be ".xlsm" which supports Macro. This will definitely corrupt your file. It should be ".xlsx"
-5) Don't forget to change the ROW & COLUMN number
+4) Change the name of the Excel Sheet -> worksheet = workbook["Companies(Copy)"]
+Mine is "Companies(Copy)"
+5) The Excel file should never be ".xlsm" which supports Macro. This will definitely corrupt your file. It should be ".xlsx"
+6) Don't forget to change the ROW & COLUMN number
 for row, website in enumerate(websites, start=1):
     worksheet.cell(row=row, column=1).hyperlink = website.strip()
-6) Work always on a copy file. 
-7) Don't forget to change the content in the list named "companies_websites"
+7) Work always on a copy file! 
+8) Don't forget to change the content in the list named "companies_websites"
 Python will split the content WITHIN the list.
