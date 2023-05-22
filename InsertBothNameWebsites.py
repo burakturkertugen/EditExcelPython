@@ -1,9 +1,9 @@
 import re
 from openpyxl import load_workbook
 
-filepath = "C:/Users/burak/Desktop/Excel_SQL/PROJE/LifeQuality/CompanyList.xlsx"
+filepath = "C:/Users/burak/Desktop/CompanyList.xlsx"
 workbook = load_workbook(filepath)
-worksheet = workbook["Companies(Copy)"]
+worksheet = workbook["Companies"]
 
 companies_websites = """
 First Company https://www.linkedin.com/company/jti/
